@@ -272,7 +272,7 @@ header{
 }
 /*Contact Css End*/
 
-/* footer */
+/* footer start*/
 
 footer{
     background:#4d556c;
@@ -295,3 +295,5 @@ footer{
 .footer_right p{
     color:#fff;
 }
+
+/* footer end */
