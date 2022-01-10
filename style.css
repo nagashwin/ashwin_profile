@@ -33,8 +33,6 @@ header{
     font-weight: bolder;
     background: #eaf6bf;
     padding: 15px 20px;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
 }
 .header_right{
     float: right;
@@ -44,6 +42,17 @@ header{
     height:30px;
     width:30px;
 }
+.sociallogo:hover{
+    animation: socialiconspin 5s 1;
+ }
+ @keyframes socialiconspin{
+     0% {transform: scale(1.0)}
+     10% {transform: scale(1.1)}
+     20% {transform: rotate(10deg)}
+     30% {transform: rotate(-10deg)}
+     40% {transform: scale(1.0)}
+   
+ }
 .profile_bg{
     height:450px;
     background-image:url('images/profile_background.jpg');
@@ -71,6 +80,11 @@ header{
     color: #f4f6bf;
     margin: 0px;
     font-size: 18px;
+    animation: fadeouttext 2s;
+}
+@keyframes fadeouttext{
+    0%  {display: none}
+    20% {margin-left:-300%}
 }
 .profile_text{
     color: #dff0ff;
@@ -78,6 +92,12 @@ header{
     width: 60%;
     text-align: center;
     display: inline-block;
+    animation: fadeoutprofiletext 2.5s;
+    z-index: -1;
+}
+@keyframes fadeoutprofiletext{
+    0%  {display: none}
+    10% {margin-left: -300%;}
 }
 /*Home Css End*/
 
