@@ -1,30 +1,27 @@
 <html>
 <head>
     <title>Nagashwin S</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="images/profile.png" rel="icon" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="head_top">
-            <div class="header_left">
-                <ul class="menu">
-                    <a href="#home">
-                        <li class="menu_btn">Home</li>
-                    </a>
-                    <a href="#skills">
-                        <li class="menu_btn">Skills</li>
-                    </a>
-                    <a href="#experience">
-                        <li class="menu_btn">Experience</li>
-                    </a>
-                    <a href="#education">
-                        <li class="menu_btn">Education</li>
-                    </a>
-                    <a href="#contact">
-                        <li class="menu_btn">Contact</li>
-                    </a>
+       
+        <nav class="head_top navbar navbar-expand-md navbar-dark">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#devNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="header_left collapse navbar-collapse" id="devNav">
+          
+                <ul class="menu navbar-nav">                   
+                    <li class="menu_btn nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="menu_btn nav-item"><a class="nav-link" href="#skills">Skills</a></li>                    
+                    <li class="menu_btn nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="menu_btn nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="menu_btn nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="header_right">
@@ -41,15 +38,14 @@
                         <img src="images/insta.png" alt="insta" class="sociallogo"/>
                     </a>
             </div>
-        </div>
-    </header>
+        </nav>
     <div style="clear: both;"></div>
     <!-- Home Start -->
     <div class="profile_bg" id="home">
         <div class="profile_bg_cont">
             <img src="images/img1.jpg" alt="profile" class="profile_img" />
-            <h3 class="profile_name">Hello! I'm Nagashwin S</h3>
-            <h6 class="designation">UX Designer</h6>
+            <h3 class="profile_name">Nagashwin S</h3>
+            <h6 class="designation">I'm UX Designer</h6>
             <p class="profile_text"> I love to work passionate about creating clean, unique, elegant, responsive websites.I have multiple skill experiences that inclues HTML5, CSS3,Responsive Design, Javascript, Adobe Photoshop, Adobe Illustrator .</p>
         </div>
     </div>
@@ -57,83 +53,182 @@
 
     <!-- Skills Start -->
     <div class="skills_bg" id="skills">
+        <div class="container">
         <h2 class="skills_text">&#8811; Skills &#8810;</h2>
-        <ul class="skills_logo">
-            <li><img src="images/html.png" rel="html_logo"/>
-            <h3>HTML5</h3>
+        <div class="row skills_logo">
+            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-3">
+                <div class="skills_logo_border">
+                <img src="images/html.png" rel="html_logo"/>
+                <h3>HTML5</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-3">
+                <div class="skills_logo_border">
+                <img src="images/css.png" rel="css_logo"/>
+                <h3>CSS3</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-3">
+                <div class="skills_logo_border">
+                <img src="images/javascript.png" rel="javascript_logo"/>
+                <h3>Javascript</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-3">
+                <div class="skills_logo_border">
+                <img src="images/photoshop.png" rel="photoshop_logo"/>
+                <h3>Photoshop</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-3">
+                <div class="skills_logo_border">
+                <img src="images/ai.png" rel="ai_logo"/>
+                <h3>Illustrator</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-3">
+                <div class="skills_logo_border">
+                <img src="images/angular.png" rel="angular_logo"/>
+                <h3>Angular</h3>
+                </div>
+            </div>
+        </div>
+        <!-- <ul class="skills_logo">
+            <li>
             </li>
-            <li><img src="images/css.png" rel="css_logo"/>
-            <h3>CSS3</h3>
+            <li>
             </li>
-            <li><img src="images/javascript.png" rel="javascript_logo"/>
-            <h3>Javascript</h3>
+            <li>
             </li>
-            <li><img src="images/photoshop.png" rel="photoshop_logo"/>
-            <h3>Photoshop</h3>
+            <li>
             </li>
-            <li><img src="images/ai.png" rel="ai_logo"/>
-            <h3>Illustrator</h3>
+            <li>
             </li>
-        </ul>
+        </ul> -->
+    </div>
     </div>
     <!-- Skills End -->
     <!-- Experience Start -->
     <div class="experience_bg" id="experience">
         <h2 class="experience_text">&#8811; Work Experience &#8810;</h2>
-        <div style="clear: both;"></div>
-       <div class="exp_cont_left">
-           <h3>G2 Evolution</h3>
-           <h6>Web Designer</h6>
-           <p>Worked as a Web Designer in G2Evolution Private Limited in Bengaluru.Created Clean, Elegant, unique web designs.</p>
-       </div> 
-       <div class="exp_cont_right">
-        <h3>Snigdha Technosoft</h3>
-        <h6>UX Designer</h6>
-        <p>working as a UX Designer in this company. I am passionate about creating awsome websites fully responsive mobile friendly.</p>
-    </div> 
-    <div class="exp_cont_right">
-        <h3>Sysintelli Software & Services</h3>
-        <h6>Senior UX Designer</h6>
-        <p>working as a UX Designer in this company. I am passionate about creating awsome websites fully responsive mobile friendly.</p>
-    </div> 
+       <div class="container">
+           <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <img src="images/g2evolution.png"/>
+                        <h3>G2 Evolution</h3>
+                        <h6>Web Designer</h6>
+                        <p>Worked as a Web Designer in G2Evolution Private Limited in Bengaluru.Created Clean, Elegant, unique web designs.</p>
+                    </div> 
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <img src="images/snigdha.png"/>
+                        <h3>Snigdha Technosoft</h3>
+                        <h6>UX Designer</h6>
+                        <p>working as a UX Designer in this company. I am passionate about creating awsome websites fully responsive mobile friendly.</p>
+                    </div> 
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3"></div>
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <img src="images/sysintelli.png"/>
+                        <h3>Sysintelli Software & Services</h3>
+                        <h6>Senior UX Designer</h6>
+                        <p>working as a UX Designer in this company. I am passionate about creating awsome websites fully responsive mobile friendly.</p>
+                    </div> 
+                </div>
+                <div class="col-md-3"></div>
+           </div>
+       </div>
     </div>
     <!-- Experience End -->
      <!-- Education Start -->
      <div class="education_bg" id="education">
         <h2 class="education_text">&#8811; Education &#8810;</h2>
-        <div style="clear: both;"></div>
-        <div class="edu_cont_left">
-            <h3>B.Tech (2008-2012)</h3>
-            <h6>Information Techonology(62 %)</h6>
-            <p>Done my Bachelor of engineering in Information Technology from Tirumala Engineering College affilicated to JNTUH</p>
-        </div> 
-        <div class="edu_cont_right">
-         <h3>Intermediate (2006-2008)</h3>
-         <h6>MPC(78 %)</h6>
-         <p>Done my 12th from Narayana Junior College, saroornagar, Hyderabad.<br/><br/></p>
-     </div> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="card card_education">
+                        <h3>B.Tech (2008-2012)</h3>
+                        <h6>Information Techonology(62 %)</h6>
+                        <p>Bachelor of Engineering in IT from Tirumala Engineering College affilicated to JNTUH</p>
+                    </div> 
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="card card_education">
+                        <h3>Intermediate (2006-2008)</h3>
+                        <h6>MPC(78 %)</h6>
+                        <p>from Narayana Junior College, saroornagar, Hyderabad.</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Education End -->
      <!-- Contact Start -->
      <div class="contact_bg" id="contact">
         <h2 class="contact_text">&#8811; Contact &#8810;</h2>    
-        <div style="clear: both;"></div>
-        <div class="contact_left">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.754238006896!2d78.33203431418875!3d17.47147310497481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf55deda1442b7773!2zMTfCsDI4JzE3LjMiTiA3OMKwMjAnMDMuMiJF!5e0!3m2!1sen!2sin!4v1641223555750!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>  
-        <div class="contact_right">
-
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.754238006896!2d78.33203431418875!3d17.47147310497481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf55deda1442b7773!2zMTfCsDI4JzE3LjMiTiA3OMKwMjAnMDMuMiJF!5e0!3m2!1sen!2sin!4v1641223555750!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
+                <div class="card card-contact">
+                    <h4>Get in Touch with Us</h4>
+                    <div class="panel-body">
+                     <form>
+                    <div class="row">
+                    <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" name="floatingInput" placeholder="First Name"/>
+                        <label for="floatingInput">First Name*</label>
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="lname" name="lname" placeholder="Last Name"/>
+                        <label for="lname">Last Name</label>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phoneno" name="phone" type="number" placeholder="phone number" maxlength="10"/>
+                                <label for="phoneno">Phone Number</label>
+                            </div>
+                        </div>
+                    </div>                  
+                    <div class="form-floating">
+                        <textarea name="comments" class="form-control" id="comments" placeholder="Message" rows="5"></textarea>
+                        <label for="comments">Message</label>
+                    </div>
+                    <br/>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+            </div>
+            </div>
+            </div>
+        </div>
         </div>
     </div>
     <!-- Contact End -->
     <footer>
-        <div class="footer_left">
-            <p>&copy; 2021. All rights reserved </p>
+        <div class="row m-0">
+            <div class="col-md-12">
+                    <p>&copy; 2021. All rights reserved | Created by Nagashwin S </p>
+            </div>
         </div>
-        <div class="footer_right">
-            <p>Created by Nagashwin S </p>
-        </div>
-        
     </footer>
 </body>
 

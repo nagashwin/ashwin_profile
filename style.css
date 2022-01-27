@@ -1,12 +1,27 @@
 body{
     margin: 0px;
     width: 100%;
-    font-family:'Courier New', Courier, monospace
+    font-family:'Courier New', Courier, monospace !important;
 }
 a{
     text-decoration: none;
 }
 /*Home Css Start*/
+.navbar{
+    padding: 0px !important;
+}
+.nav-link{
+    padding: 0px !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255) !important;
+}
+.navbar-toggler{
+    margin: 15px;
+}
+.bg-dark{
+    background:#4d556c !important;
+}
 header{
     background:#4d556c;
     width: 100%;
@@ -14,6 +29,7 @@ header{
 }
 .head_top{
     width: 100%;
+    background:#4d556c !important;
 }
 .header_left{
     float: left;
@@ -29,18 +45,29 @@ header{
     padding: 15px 20px;
 }
 .menu_btn:hover{
-    color: #4d556c;
+    color: #4d556c !important;
     font-weight: bolder;
     background: #eaf6bf;
     padding: 15px 20px;
 }
+.menu_btn>.nav-link:hover{
+    color: #4d556c !important;
+}
+.nav-link{
+    color: #fff ;
+    font-family:'Courier New', Courier, monospace;
+}
 .header_right{
     float: right;
-    margin: 10px 20px 0px;
+    margin: 0px 20px 0px;
 }
 .sociallogo{
     height:30px;
     width:30px;
+    margin: 0px 5px;
+}
+.header_right a{
+    text-decoration: none !important;
 }
 .sociallogo:hover{
     animation: socialiconspin 5s 1;
@@ -74,17 +101,15 @@ header{
 .profile_name{
     font-size: 36px;
     color: #fff;
-    margin: 0px;
 }
 .designation{
     color: #f4f6bf;
-    margin: 0px;
     font-size: 18px;
-    animation: fadeouttext 2s;
+    animation: fadeouttext 3s;
 }
 @keyframes fadeouttext{
-    0%  {display: none}
-    20% {margin-left:-300%}
+    from{ transform: scale(0.0) }
+    to  { transform: scale(1.0) }
 }
 .profile_text{
     color: #dff0ff;
@@ -92,12 +117,12 @@ header{
     width: 60%;
     text-align: center;
     display: inline-block;
-    animation: fadeoutprofiletext 2.5s;
+    animation: fadeoutprofiletext 3s;
     z-index: -1;
 }
 @keyframes fadeoutprofiletext{
-    0%  {display: none}
-    10% {margin-left: -300%;}
+    from{ transform: scale(0.0) }
+    to  { transform: scale(1.0) }
 }
 /*Home Css End*/
 
@@ -107,6 +132,7 @@ header{
     width: 100%;
     padding: 60px 0px;
     text-align: center;
+    
 }
 .skills_text{
     margin: 0px;
@@ -117,22 +143,29 @@ header{
     padding: 0px 0px 0px 0px;
     color: #4d556c;
     font-size: 30px;
+    font-weight: 600;
 }
 .skills_logo{
     width: 100%;
     margin: 0px;
     padding: 40px 0px 0px;
 }
-.skills_logo li{
+.skills_logo_border{
     text-decoration: none;
     display: inline-block;
-    margin: 20px;
+    margin-bottom: 20px;
+    width: 100%;
     padding: 20px;
     border: 1px solid #b9b9b9;
     border-radius: 15px;
     box-shadow: 5px 5px 8px 0px #b7b7b7;
+    animation: skillsbgeffect 3s;
 }
-.skills_logo li:hover{
+@keyframes skillsbgeffect{
+    from{ transform: scale(0.0) }
+    to  { transform: scale(1.0) }
+}
+/* .skills_logo li:hover{
     text-decoration: none;
     display: inline-block;
     margin: 20px;
@@ -141,9 +174,11 @@ header{
     border-radius: 15px;
     box-shadow: 5px 5px 8px 0px #b7b7b7;
     background: #e5e5e5;
-}
+} */
 .skills_logo h3{
     margin: 0px;
+    font-size: 16px;
+    font-weight: 600;
 }
 /*Skills Css End*/
 
@@ -164,45 +199,42 @@ header{
     padding: 0px 0px 0px 0px;
     color: #4d556c;
     font-size: 30px;
+    font-weight: 600;
 }
-.exp_cont_left{
-    width: 40%;
+
+.card{
+    width: 100%;
     border: 1px solid #cccccc;
-    margin: 20px;
-    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 15px !important;
     display: inline-block;
     box-shadow: 5px 5px 8px 0px #b7b7b7;
+    padding: 15px 15px 0px;
 }
-.exp_cont_left h3{
-    font-size: 26px;
+.card h3{
+    font-size: 22px;
     margin-bottom:10px;
+    font-weight: 600;
 }
-.exp_cont_left h6{
+.card h6{
     font-size: 16px;
     margin: 0px;
 }
-.exp_cont_left p{
+.card p{
     padding: 10px;
 }
-.exp_cont_right{
-    width: 40%;
-    border: 1px solid #cccccc;
-    margin: 20px;
-    border-radius: 15px;
-    display: inline-block;
+.card img{
+    width: 50px;
+    margin: 0px auto;
+    margin-top: -7%;
+    margin-bottom: 2%;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
     box-shadow: 5px 5px 8px 0px #b7b7b7;
 }
-.exp_cont_right h3{
-    font-size: 26px;
-    margin-bottom:10px;
-}
-.exp_cont_right h6{
-    font-size: 16px;
-    margin: 0px;
-}
-.exp_cont_right p{
-    padding: 10px;
-}
+
 /*Experience Css End*/
 
 /*Education Css Start*/
@@ -222,45 +254,32 @@ header{
     padding: 0px 0px 0px 0px;
     color: #4d556c;
     font-size: 30px;
+    font-weight: 600;
 }
-.edu_cont_left{
-    width: 40%;
+.card_education{
+    width: 100%;
     border: 1px solid #cccccc;
-    margin: 20px;
-    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 15px !important;
     display: inline-block;
     box-shadow: 5px 5px 8px 0px #b7b7b7;
+    padding: 15px 15px 0px;
+    background: none !important;
 }
-.edu_cont_left h3{
-    font-size: 26px;
+.card_education h3{
+    font-size: 22px;
     margin-bottom:10px;
+    font-weight: 600;
 }
-.edu_cont_left h6{
+.card_education h6{
     font-size: 16px;
     margin: 0px;
 }
-.edu_cont_left p{
+.card_education p{
     padding: 10px;
 }
-.edu_cont_right{
-    width: 40%;
-    border: 1px solid #cccccc;
-    margin: 20px;
-    border-radius: 15px;
-    display: inline-block;
-    box-shadow: 5px 5px 8px 0px #b7b7b7;
-}
-.edu_cont_right h3{
-    font-size: 26px;
-    margin-bottom:10px;
-}
-.edu_cont_right h6{
-    font-size: 16px;
-    margin: 0px;
-}
-.edu_cont_right p{
-    padding: 10px;
-}
+
 /*Education Css End*/
 
 /*Contact Css Start*/
@@ -281,14 +300,27 @@ header{
     color: #4d556c;
     font-size: 30px;
     margin-bottom: 40px;
+    font-weight: 600;
 }
-.contact_left{
+.card-contact{
+    width: 100%;
+    border: 1px solid #cccccc;
+    margin: 0px !important;
+    border-radius: 15px !important;
     display: inline-block;
-    width: 40%;
+    box-shadow: 5px 5px 8px 0px #b7b7b7;
+    padding: 15px 15px 0px;
+    background: none !important;
 }
-.contact_right{
-    display: inline-block;
-    width: 40%;
+.card-contact label{
+    font-weight: 600;
+    text-align: left !important;
+    display: block;
+}
+.card-contact h4{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 0px 15px;
 }
 /*Contact Css End*/
 
@@ -301,19 +333,10 @@ footer{
     text-align: center;
 }
 
-.footer_left{
- display: inline-block;
- width: 40%;
-}
-.footer_left p{
+footer p{
     color:#fff;
-}
-.footer_right{
-    display: inline-block;
-    width: 40%;
-}
-.footer_right p{
-    color:#fff;
+    padding: 5px;
+    margin: 0px;
 }
 
 /* footer end */
