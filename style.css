@@ -94,7 +94,7 @@ header{
 }
 .profile_img{
     border: 5px solid #fff;
-    width: 15%;
+    width: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -114,7 +114,7 @@ header{
 .profile_text{
     color: #dff0ff;
     line-height: 24px;
-    width: 60%;
+    width: 100%;
     text-align: center;
     display: inline-block;
     animation: fadeoutprofiletext 3s;
